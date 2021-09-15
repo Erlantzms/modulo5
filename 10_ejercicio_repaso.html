@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        /*
+        * Crear un array de 10 números. Usar un for para asignar los valores de 20 a 11 a las 10 posiciones
+        * (en orden descendente). Usar un for para mostrar los 10 valores en pantalla.
+        */
+
+        //Se definen las variables "numeros" (para el array defnitivo) y "orden" (para indicar qué elemento del array estamos definiendo) 
+        let numeros = [];
+        let orden = 0
+        
+        //Se recorre el for, desde los numeros 20 al 11, siendo i cada vez menor (orden inverso)
+        for (let i=20; i > 10; i--) {
+            numeros [orden] = i
+            orden = orden + 1
+        }
+
+        //Se imprime array final
+        console.log (numeros)
+
+    </script>
+</body>
+
+</html>

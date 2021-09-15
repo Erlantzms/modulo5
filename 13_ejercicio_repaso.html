@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let array = [];
+        let arrayCont = [];
+        let numeroElegido
+        let pregunta ="Introduce un numero del 1 al 10";
+        let maximo = 11
+    
+        // Creamos un array vacío en función del máximo de números que va a haber (Esto crea un contador lleno de 0s)
+        for (let i = 0; i < maximo; i++) {
+            arrayCont[i] = 0;
+        }
+
+        // Pedimos al usuario quue vaya introduciendo los números
+        for (let j = 0; j < maximo; j++) {
+            array[j] =  parseInt(prompt(pregunta));
+            numeroElegido = array[j];
+
+            if (numeroElegido < maximo) { 
+                //Sumamos 1 a cada numero que haya indruducido el usuario, utilizando la posicion del arrayCOnt
+                arrayCont[array[j]] = parseInt(arrayCont[array[j]] + 1);
+
+                // Imprimimos los resultados en cada vuelta
+                for (let k = 0; k < maximo; k++) {
+                    console.log(k+ "       " + arrayCont[k]);
+                }
+                
+            } else {
+                alert("El número elegido es mayor de " + (maximo-1))
+            } 
+                                     
+
+                
+        }
+
+    </script>
+</body>
+
+</html>
